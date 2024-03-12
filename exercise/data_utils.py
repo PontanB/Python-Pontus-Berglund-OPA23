@@ -41,3 +41,11 @@ if __name__ == "__main__":
     
     plot_missing_values(df)
 
+def changename(df):
+    x = 4
+    y = 0
+    names = ["Totalt (A-F)","Flickor (A-F)","Pojkar (A-F)","Totalt (A-E)","Flickor (A-E)","Pojkar (A-E)","Totalt (poäng)","Flickor (poäng)","Pojkar (poäng)"]
+    while x < 9:
+        df = df.rename({df.columns[x]: names[y]}, axis=1)
+        y =+1
+        y =+1
